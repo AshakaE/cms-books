@@ -12,7 +12,11 @@ function Book({ book }) {
 }
 
 Book.propTypes = {
-  book: PropTypes.arrayOf(PropTypes.object).isRequired,
+  book: PropTypes.shape({ 
+    id: PropTypes.number.isRequired, 
+    title: PropTypes.string.isRequired,
+    category: PropTypes.string.isRequired,
+   }).isRequired,
 };
 
 export default Book;

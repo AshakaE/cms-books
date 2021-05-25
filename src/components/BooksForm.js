@@ -1,17 +1,17 @@
 import React from 'react';
 
 const BooksForm = () => {
-  const categories = ["Action", "Biography", "History", "Horror", "Kids", "Learning", "Sci-Fi"]
+  const categories = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
 
   return (
     <div>
-      <input type='text'></input>
+      <input type="text" />
       <select name="booksCategories" id="Books">
-        {categories.map(category => <option value={category}>{category}</option>)}
+        {categories.map((category) => <option key={category} value={category}>{category}</option>)}
       </select>
-      <button type='button'>Submit</button>
+      <button type="button">Submit</button>
     </div>
   );
-}
+};
 
 export default BooksForm;
