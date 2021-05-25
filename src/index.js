@@ -8,12 +8,12 @@ import booksReducer from './reducers/books';
 
 const defaultState = {
   firstBook: {
-    id: Math.random(Math.random() * 100),
+    id: Math.floor(Math.random() * 100),
     title: 'Learn programming the hard way',
     category: 'Programming',
   },
   secondBook: {
-    id: Math.random(Math.random() * 100),
+    id: Math.floor(Math.random() * 100),
     title: 'The Lean Startup',
     category: 'Novel',
   },
