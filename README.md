@@ -37,6 +37,12 @@ Node.js
 - GitHub: [@AshakaE](https://github.com/AshakaE)
 - LinkedIn: [AshakaE](https://www.linkedin.com/in/AshakaE/)
 
+👤 Andres Ortegon
+
+- GitHub: @helman101
+- Twitter: @helman1011
+- LinkedIn: Andres Ortegon
+
 ## 🤝 Contributing
 
 Contributions, issues and, feature requests are welcome!
