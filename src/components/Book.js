@@ -12,11 +12,11 @@ function Book({ book }) {
 }
 
 Book.propTypes = {
-  book: PropTypes.shape({ 
-    id: PropTypes.number.isRequired, 
+  book: PropTypes.shape({
+    id: PropTypes.number.isRequired,
     title: PropTypes.string.isRequired,
     category: PropTypes.string.isRequired,
-   }).isRequired,
+  }).isRequired,
 };
 
 export default Book;
