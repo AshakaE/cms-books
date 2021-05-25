@@ -7,7 +7,7 @@ const BooksForm = () => {
     <div>
       <input type='text'></input>
       <select name="booksCategories" id="Books">
-        {categories.map(category => { <option value={category}></option> })}
+        {categories.map(category => <option value={category}>{category}</option>)}
       </select>
       <button type='button'>Submit</button>
     </div>
