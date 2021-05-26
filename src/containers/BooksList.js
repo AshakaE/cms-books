@@ -35,6 +35,7 @@ const mapStateToProps = (state) => ({
 
 BooksList.propTypes = {
   books: PropTypes.objectOf(PropTypes.object).isRequired,
+  dispatch: PropTypes.func.isRequired,
 };
 
 export default connect(mapStateToProps)(BooksList);

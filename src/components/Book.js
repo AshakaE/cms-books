@@ -9,9 +9,10 @@ function Book({ book, handleRemoveBook }) {
       <td>{book.category}</td>
       <td>
         {' '}
-        <button type='button' onClick={() => handleRemoveBook(book)}>
+        <button type="button" onClick={() => handleRemoveBook(book)}>
           delete book
-        </button>{' '}
+        </button>
+        {' '}
       </td>
     </tr>
   );
