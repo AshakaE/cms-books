@@ -30,7 +30,7 @@ const BooksList = (props) => {
 };
 
 const mapStateToProps = (state) => ({
-  books: state,
+  books: state.books,
 });
 
 BooksList.propTypes = {

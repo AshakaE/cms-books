@@ -1,12 +1,15 @@
 const CHANGE_FILTER = 'CHANGE_FILTER';
 
-const filterReducer = (filterState = '', action) => {
+const filterReducer = (state = {}, action) => {
   switch (action.type) {
     case CHANGE_FILTER: {
-      return { ...filterState };
+      return { 
+        ...state,
+        filter: action.payload,
+      };
     }
     default:
-      return filterState;
+      return state;
   }
 };
 

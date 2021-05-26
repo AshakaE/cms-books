@@ -7,16 +7,19 @@ import App from './components/App';
 import booksReducer from './reducers/books';
 
 const defaultState = {
-  firstBook: {
-    id: Math.floor(Math.random() * 100),
-    title: 'Learn programming the hard way',
-    category: 'Programming',
+  books: {
+    firstBook: {
+      id: Math.floor(Math.random() * 100),
+      title: 'Learn programming the hard way',
+      category: 'Programming',
+    },
+    secondBook: {
+      id: Math.floor(Math.random() * 100),
+      title: 'The Lean Startup',
+      category: 'Novel',
+    },
   },
-  secondBook: {
-    id: Math.floor(Math.random() * 100),
-    title: 'The Lean Startup',
-    category: 'Novel',
-  },
+  filter: 'All',
 };
 
 const store = createStore(booksReducer, defaultState);

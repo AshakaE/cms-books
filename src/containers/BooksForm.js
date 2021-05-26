@@ -62,7 +62,7 @@ const BooksForm = (props) => {
 };
 
 const mapStateToProps = (state) => ({
-  books: state,
+  books: state.books,
 });
 
 BooksForm.propTypes = {
