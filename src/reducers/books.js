@@ -16,7 +16,7 @@ const bookReducer = (state = {}, action) => {
         },
       };
     case REMOVE_BOOK:
-      return state.map((book) => book.id !== action.payload.id);
+      return Object.values(state).map((book) => book.id !== action.payload.id);
     default:
       return state;
   }
