@@ -2,7 +2,7 @@
 
 # React 
 
-> 
+> .
 
 ![](./docs/snapshot.jpeg)
 
