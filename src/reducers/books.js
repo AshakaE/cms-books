@@ -9,7 +9,7 @@ const bookReducer = (state = {}, action) => {
       index += 1;
       return {
         ...state,
-        newBook: {
+        [index]: {
           id: index,
           title: action.payload.title,
           category: action.payload.category,

@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
+import { addBookAction } from '../actions/index';
+import { connect } from 'react-redux';
 
-const BooksForm = () => {
+const BooksForm = (props) => {
   const [title, setTitle] = useState('');
   const [category, setCategory] = useState(''); 
 
@@ -20,15 +22,34 @@ const BooksForm = () => {
     };
   };
 
+  const handleSubmit = () => {
+    const book = {
+      title,
+      category,
+    }
+
+    if(book.category === ''){
+      book.category = 'Action';
+    }
+
+    props.dispatch(addBookAction(book))
+  }
+
   return (
     <div>
       <input onChange={handleChange} type="text" />
       <select onChange={handleChange} name="booksCategories" id="Books">
         {categories.map((category) => <option key={category} value={category}>{category}</option>)}
       </select>
-      <button type="button">Submit</button>
+      <button onClick={handleSubmit} type="button">Submit</button>
     </div>
   );
 };
 
-export default BooksForm;
+const mapStateToProps = (state) => {
+  return {
+    books: state,
+  }
+}
+
+export default connect(mapStateToProps)(BooksForm);
