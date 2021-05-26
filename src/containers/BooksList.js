@@ -8,7 +8,6 @@ const BooksList = (props) => {
   const { books } = props;
 
   const handleRemoveBook = (book) => {
-    console.log(book)
     props.dispatch(removeBookAction(book));
   };
 
