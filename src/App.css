@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+body {
+  background-color: #F5F6FA;
+}
+
 .center {
   margin: 0 auto;
 }
@@ -59,7 +63,7 @@
 .CATEGORIES {
   width: 105px;
   height: 16px;
-  margin: 18px 664px 11px 41px;
+  margin: 18px 664px 11px 10px;
   opacity: 0.5;
   font-family: Montserrat;
   font-size: 13px;
@@ -72,9 +76,7 @@
 }
 
 .Mask {
-  width: 17px;
-  height: 17px;
-  background-color: #0290ff;
+  color: #0290ff;
 }
 
 .Oval {
