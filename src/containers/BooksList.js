@@ -6,8 +6,8 @@ import { removeBookAction, changeFilterAction } from '../actions/index';
 import CategoryFilter from '../components/CategoryFilter';
 
 const BooksList = (props) => {
-  const { books } = props;
-
+  const { books, filter } = props;
+  
   const handleRemoveBook = (book) => {
     props.dispatch(removeBookAction(book));
   };
@@ -18,23 +18,30 @@ const BooksList = (props) => {
   };
 
   return (
-    <table>
-      <thead>
-        <tr>
-          <th>Book ID</th>
-          <th>Title</th>
-          <th>Category</th>
-        </tr>
-      </thead>
-      <tbody>
-        {Object.values(books).map((book) => (
-          <Book key={book.id} book={book} handleRemoveBook={handleRemoveBook} />
-        ))}
-        <tr>
-          <CategoryFilter handleFilterChange={handleFilterChange} />
-        </tr>
-      </tbody>
-    </table>
+    <div>
+      <table>
+        <thead>
+          <tr>
+            <th>Book ID</th>
+            <th>Title</th>
+            <th>Category</th>
+          </tr>
+        </thead>
+        <tbody>
+          {Object.values(books).map((book) => {
+            if(filter !== 'All') {
+              if(filter === book.category){
+                return (<Book key={book.id} book={book} handleRemoveBook={handleRemoveBook} />)
+              }
+            } else {
+              return (<Book key={book.id} book={book} handleRemoveBook={handleRemoveBook} />)
+            }
+            return null
+          })}
+        </tbody>
+      </table>
+      <CategoryFilter handleFilterChange={handleFilterChange} />
+    </div>
   );
 };
 

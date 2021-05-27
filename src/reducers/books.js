@@ -9,23 +9,17 @@ const bookReducer = (state = {}, action) => {
       index += 1;
       return {
         ...state,
-        books: {
-          ...state.books,
-          [index]: {
-            id: index,
-            title: action.payload.title,
-            category: action.payload.category,
-          }
+        [index]: {
+          id: index,
+          title: action.payload.title,
+          category: action.payload.category,
         },
       };
     case REMOVE_BOOK: {
       const arrObj = Object.values(state.books).filter(
         (book) => book.id !== action.payload.id,
       );
-      return { 
-        ...state,
-        books: { ...arrObj }
-      };
+      return { ...arrObj };
     }
     default:
       return state;

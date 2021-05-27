@@ -11,6 +11,9 @@ const CategoryFilter = (props) => {
       id="filterCategory"
       onChange={handleFilterChange}
     >
+      <option key='All' value='All' >
+        All
+      </option>
       {categories.map((category) => (
         <option key={category} value={category}>
           {category}
