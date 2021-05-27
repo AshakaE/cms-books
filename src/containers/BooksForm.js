@@ -2,20 +2,11 @@ import React, { useState } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { addBookAction } from '../actions/index';
+import categories from '../utils/categories';
 
 const BooksForm = (props) => {
   const [title, setTitle] = useState('');
   const [category, setCategory] = useState('');
-
-  const categories = [
-    'Action',
-    'Biography',
-    'History',
-    'Horror',
-    'Kids',
-    'Learning',
-    'Sci-Fi',
-  ];
 
   const handleChange = (e) => {
     const element = e.target.localName;
