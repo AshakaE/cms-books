@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { addBookAction } from '../actions/index';
 import categories from '../utils/categories';
+import '../App.css';
 
 const BooksForm = (props) => {
   const [title, setTitle] = useState('');
@@ -36,18 +37,35 @@ const BooksForm = (props) => {
   };
 
   return (
-    <div>
-      <input onChange={handleChange} type="text" />
-      <select onChange={handleChange} name="booksCategories" id="Books">
-        {categories.map((category) => (
-          <option key={category} value={category}>
-            {category}
-          </option>
-        ))}
-      </select>
-      <button onClick={handleSubmit} type="button">
-        Submit
-      </button>
+    <div className="flex flex-col">
+      <h3 className="block pl-24 title pb-10">Add New Book</h3>
+      <div className="flex justify-between px-24 w-">
+        <input
+          onChange={handleChange}
+          type="text"
+          className="w-1/2 border border-gray-100 pl-5"
+          placeHolder="Book title"
+        />
+        <select
+          onChange={handleChange}
+          name="booksCategories"
+          id="Books"
+          className="flex-grow mx-10 px-4 text-gray-800"
+        >
+          {categories.map((category) => (
+            <option key={category} value={category}>
+              {category}
+            </option>
+          ))}
+        </select>
+        <button
+          onClick={handleSubmit}
+          type="button"
+          className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-sm text-white btn-col hover:bg-indigo-500   focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 w-[184px] h-[45px] uppercase text-center items-center"
+        >
+          Add Book
+        </button>
+      </div>
     </div>
   );
 };
