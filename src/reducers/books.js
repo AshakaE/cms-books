@@ -16,7 +16,7 @@ const bookReducer = (state = {}, action) => {
         },
       };
     case REMOVE_BOOK: {
-      const arrObj = Object.values(state).filter(
+      const arrObj = Object.values(state.books).filter(
         (book) => book.id !== action.payload.id,
       );
       return { ...arrObj };
