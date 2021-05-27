@@ -3,6 +3,13 @@
   margin: 0 auto;
 }
 
+.Bookstore-bg {
+  width: 1600px;
+  height: 1434px;
+  padding: 149px 60px 123px 100px;
+  background-color: #f5f6fa;
+}
+
 .panel-bg {
   width: 1400px;
   height: 1097px;
@@ -33,4 +40,47 @@
   line-height: normal;
   letter-spacing: normal;
   color: #0290ff;
+}
+
+.BOOKS {
+  width: 59px;
+  height: 16px;
+  margin: 18px 41px 11px 0;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.9px;
+  color: #121212;
+}
+
+.CATEGORIES {
+  width: 105px;
+  height: 16px;
+  margin: 18px 664px 11px 41px;
+  opacity: 0.5;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.9px;
+  color: #121212;
+}
+
+.Mask {
+  width: 17px;
+  height: 17px;
+  background-color: #0290ff;
+}
+
+.Oval {
+  width: 45px;
+  height: 45px;
+  /* margin: 0 0 0 664px; */
+  padding: 14px;
+  border: solid 1px #e8e8e8;
 }

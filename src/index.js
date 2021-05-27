@@ -22,7 +22,10 @@ const defaultState = {
   filter: 'All',
 };
 
-const rootReducer = combineReducers({ books: booksReducer, filter: filterReducer });
+const rootReducer = combineReducers({
+  books: booksReducer,
+  filter: filterReducer,
+});
 
 const store = createStore(rootReducer, defaultState);
 
