@@ -12,10 +12,14 @@ const App = () => (
       <div className="flex items-center justify-between">
         <div className="flex items-center">
           <h1 className="Bookstore-CMS">Bookstore CMS</h1>
-          <p className="BOOKS uppercase">Books</p>
-          <p className="CATEGORIES uppercase">Categories</p>
+          <p className="BOOKS uppercase hover:text-gray-900 cursor-pointer">
+            Books
+          </p>
+          <p className="CATEGORIES uppercase hover:text-gray-900 cursor-pointer">
+            Categories
+          </p>
         </div>
-        <div className="Oval rounded-full flex">
+        <div className="Oval rounded-full flex cursor-pointer">
           <FontAwesomeIcon icon={faUser} className="Mask" />
           {/* <div className="Mask">&</div> */}
         </div>
