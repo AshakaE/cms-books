@@ -7,7 +7,7 @@ import CategoryFilter from '../components/CategoryFilter';
 
 const BooksList = (props) => {
   const { books, filter } = props;
-  
+
   const handleRemoveBook = (book) => {
     props.dispatch(removeBookAction(book));
   };
@@ -29,14 +29,14 @@ const BooksList = (props) => {
         </thead>
         <tbody>
           {Object.values(books).map((book) => {
-            if(filter !== 'All') {
-              if(filter === book.category){
-                return (<Book key={book.id} book={book} handleRemoveBook={handleRemoveBook} />)
+            if (filter !== 'All') {
+              if (filter === book.category) {
+                return (<Book key={book.id} book={book} handleRemoveBook={handleRemoveBook} />);
               }
             } else {
-              return (<Book key={book.id} book={book} handleRemoveBook={handleRemoveBook} />)
+              return (<Book key={book.id} book={book} handleRemoveBook={handleRemoveBook} />);
             }
-            return null
+            return null;
           })}
         </tbody>
       </table>
@@ -53,6 +53,7 @@ const mapStateToProps = (state) => ({
 BooksList.propTypes = {
   books: PropTypes.objectOf(PropTypes.object).isRequired,
   dispatch: PropTypes.func.isRequired,
+  filter: PropTypes.string.isRequired,
 };
 
 export default connect(mapStateToProps)(BooksList);
