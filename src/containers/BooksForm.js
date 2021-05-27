@@ -37,31 +37,38 @@ const BooksForm = (props) => {
   };
 
   return (
-    <div className="flex flex-col">
-      <h3 className="block pl-24 title pb-10">Add New Book</h3>
-      <div className="flex justify-between px-24 w-">
+    <div className="flex flex-col border-t border-gray-200 mx-24">
+      <div className="pb-4 pt-7">
+        <h3 className="block title uppercase tracking-wider font-body">
+          Add New Book
+        </h3>
+      </div>
+      <div className="flex justify-between relative">
         <input
           onChange={handleChange}
           type="text"
-          className="w-1/2 border border-gray-100 pl-5"
+          className="w-1/2 border border-gray-200 pl-5 text-gray-300 text-base tracking-wider focus:outline-none"
           placeHolder="Book title"
         />
-        <select
-          onChange={handleChange}
-          name="booksCategories"
-          id="Books"
-          className="flex-grow mx-10 px-4 text-gray-800"
-        >
-          {categories.map((category) => (
-            <option key={category} value={category}>
-              {category}
-            </option>
-          ))}
-        </select>
+        <div className="flex-grow mx-10 border border-gray-200 text-gray-400 text-base tracking-wider appearance-none relative">
+          <div className="absolute arrow" />
+          <select
+            onChange={handleChange}
+            name="booksCategories"
+            id="Books"
+            className="w-full appearance-none h-full px-5 focus:outline-none"
+          >
+            {categories.map((category) => (
+              <option key={category} value={category}>
+                {category}
+              </option>
+            ))}
+          </select>
+        </div>
         <button
           onClick={handleSubmit}
           type="button"
-          className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-sm text-white btn-col hover:bg-indigo-500   focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 w-[184px] h-[45px] uppercase text-center items-center"
+          className="inline-flex justify-center py-2 px-4 shadow-sm text-[13px] rounded-sm text-white btn-col hover:bg-indigo-500 focus:outline-none  w-[184px] h-[45px] uppercase text-center items-center font-rob tracking-wider font-medium"
         >
           Add Book
         </button>

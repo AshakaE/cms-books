@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Slab:wght@400;600&display=swap');
 body {
-  background-color: #F5F6FA;
+  background-color: #f5f6fa;
 }
 
 .center {
@@ -36,7 +35,6 @@ body {
   width: 240px;
   height: 37px;
   margin: 6px 47px 2px 0;
-  font-family: Montserrat;
   font-size: 30px;
   font-weight: bold;
   font-stretch: normal;
@@ -50,7 +48,6 @@ body {
   width: 59px;
   height: 16px;
   margin: 18px 41px 11px 0;
-  font-family: Montserrat;
   font-size: 13px;
   font-weight: normal;
   font-stretch: normal;
@@ -65,7 +62,6 @@ body {
   height: 16px;
   margin: 18px 664px 11px 10px;
   opacity: 0.5;
-  font-family: Montserrat;
   font-size: 13px;
   font-weight: normal;
   font-stretch: normal;
@@ -102,12 +98,21 @@ body {
 
 .title {
   height: 24px;
-  font-family: Montserrat;
   font-size: 20px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: -0.18px;
-  color: #888888;
+  color: #8f8f8f;
+}
+
+.arrow {
+  width: 5px;
+  height: 10px;
+  border-color: #888 #fff #fff;
+  border-style: solid;
+  border-width: 10px 5px;
+  top: 17px;
+  right: 15px;
 }
