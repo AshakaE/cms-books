@@ -1,39 +1,169 @@
-.App {
-  text-align: center;
+body {
+  background-color: #f5f6fa;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.center {
+  margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Bookstore-bg {
+  width: 1600px;
+  height: 1434px;
+  padding: 149px 60px 123px 100px;
+  background-color: #f5f6fa;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.panel-bg {
+  width: 1400px;
+  min-height: 90vh;
+  border-radius: 4px;
+  box-shadow: 0 0 60px 0 var(--black-5);
+  background-color: #fafafa;
+}
+
+.panel-head {
+  width: 1200px;
+  height: 95px;
+  background-color: white;
+}
+
+.Bookstore-CMS {
+  width: 240px;
+  height: 37px;
+  margin: 6px 47px 2px 0;
+  font-size: 30px;
+  font-weight: bold;
+  color: #0290ff;
+}
+
+.BOOKS {
+  width: 59px;
+  height: 16px;
+  margin: 18px 41px 11px 0;
+  font-size: 13px;
+  letter-spacing: 1.9px;
+  color: gray;
+}
+
+.CATEGORIES {
+  width: 105px;
+  height: 16px;
+  margin: 18px 664px 11px 10px;
+  opacity: 0.5;
+  font-size: 13px;
+  letter-spacing: 1.9px;
+  color: gray;
+}
+
+.Mask {
+  color: #0290ff;
+}
+
+.btn-col {
+  background-color: #0290ff;
+}
+
+.Oval {
+  width: 45px;
+  height: 45px;
+  padding: 14px;
+  border: solid 1px #e8e8e8;
+}
+
+.book-panel {
+  width: 1200px;
+  height: 170px;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: white;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: -0.18px;
+  color: #8f8f8f;
+}
+
+.arrow {
+  border-color: #888 #fff #fff;
+  border-style: solid;
+  border-width: 10px 5px;
+  top: 17px;
+  right: 15px;
+}
+
+.School-of {
+  width: 49px;
+  height: 18px;
+  margin: 0 39px 0 0;
+  opacity: 0.5;
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #121212;
+}
+
+.bp-title {
+  height: 29px;
+  margin: 3px 3px 0 0;
+  font-family: RobotoSlab, sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: -0.2px;
+  color: #121212;
+}
+
+.bs-text {
+  font-family: RobotoSlab, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #4386bf;
+}
+
+.gs-text {
+  opacity: 0.5;
+  font-family: RobotoSlab, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #121212;
+}
+
+.black-s-text {
+  font-family: RobotoSlab, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: -0.4px;
+  color: #121212;
+}
+
+.percent {
+  font-family: Montserrat, sans-serif;
+  font-size: 32px;
+  color: var(--black-two);
+}
+
+.upgrade-btn {
   color: white;
+  letter-spacing: 0.5px;
+  font-family: RobotoSlab, sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  padding: 7px 19px 8px 22px;
+  border-radius: 3px;
+  background-color: #0290ff;
 }
 
-.App-link {
-  color: #61dafb;
+.Oval-2 {
+  width: 68px;
+  height: 68px;
+  border-radius: 50px;
+  border: 5px solid rgb(0, 119, 255);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
+.Completed {
+  opacity: 0.5;
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  color: #121212;
 }

@@ -19,15 +19,9 @@ const BooksList = (props) => {
 
   return (
     <div>
-      <table>
-        <thead>
-          <tr>
-            <th>Book ID</th>
-            <th>Title</th>
-            <th>Category</th>
-          </tr>
-        </thead>
-        <tbody>
+      <CategoryFilter handleFilterChange={handleFilterChange} />
+      <div className="m-auto w-[1200px]">
+        <div>
           {Object.values(books).map((book) => {
             if (filter !== 'All') {
               if (filter === book.category) {
@@ -38,9 +32,8 @@ const BooksList = (props) => {
             }
             return null;
           })}
-        </tbody>
-      </table>
-      <CategoryFilter handleFilterChange={handleFilterChange} />
+        </div>
+      </div>
     </div>
   );
 };
