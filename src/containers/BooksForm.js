@@ -37,7 +37,7 @@ const BooksForm = (props) => {
   };
 
   return (
-    <div className="flex flex-col border-t border-gray-200 mx-24">
+    <div className="flex flex-col mx-24">
       <div className="pb-4 pt-7">
         <h3 className="block title uppercase tracking-wider font-body">
           Add New Book

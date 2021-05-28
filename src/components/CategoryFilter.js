@@ -6,20 +6,22 @@ const CategoryFilter = (props) => {
   const { handleFilterChange } = props;
 
   return (
-    <select
-      name="filterCategory"
-      id="filterCategory"
-      onChange={handleFilterChange}
-    >
-      <option key="All" value="All">
-        All
-      </option>
-      {categories.map((category) => (
-        <option key={category} value={category}>
-          {category}
+    <div className="m-auto w-[1200px] mb-8">
+      <select
+        name="filterCategory"
+        id="filterCategory"
+        onChange={handleFilterChange}
+      >
+        <option key="All" value="All">
+          All
         </option>
-      ))}
-    </select>
+        {categories.map((category) => (
+          <option key={category} value={category}>
+            {category}
+          </option>
+        ))}
+      </select>
+    </div>
   );
 };
 
