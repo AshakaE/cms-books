@@ -7,8 +7,8 @@ import '../App.css';
 import '../index.css';
 
 const App = () => (
-  <div className="panel-bg m-auto max-h-[85vh] mt-14 shadow-2xl">
-    <div className="panel-head border-b-2 border-gray-100">
+  <div className="panel-bg m-auto my-10 shadow-2xl p-10">
+    <div className="panel-head m-auto border-b-2 border-gray-100">
       <div className="flex items-center justify-between">
         <div className="flex items-center">
           <h1 className="Bookstore-CMS">Bookstore CMS</h1>

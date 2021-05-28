@@ -15,19 +15,15 @@ body {
 
 .panel-bg {
   width: 1400px;
-  height: 1097px;
-  margin: 0 40px 65px 0;
-  padding: 0 0 794px;
+  min-height: 90vh;
   border-radius: 4px;
   box-shadow: 0 0 60px 0 var(--black-5);
   background-color: #fafafa;
 }
 
 .panel-head {
-  width: 1400px;
+  width: 1200px;
   height: 95px;
-  margin: 0 0 38px;
-  padding: 23px 99px 27px 100px;
   background-color: white;
 }
 
@@ -102,7 +98,7 @@ body {
   height: 18px;
   margin: 0 39px 0 0;
   opacity: 0.5;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 14px;
   font-weight: bold;
   color: #121212;
@@ -111,30 +107,30 @@ body {
 .bp-title {
   height: 29px;
   margin: 3px 3px 0 0;
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, sans-serif;
   font-size: 22px;
   font-weight: bold;
   letter-spacing: -0.2px;
   color: #121212;
 }
 
-.bs-text{
-  font-family: RobotoSlab;
+.bs-text {
+  font-family: RobotoSlab, sans-serif;
   font-size: 14px;
   font-weight: 300;
   color: #4386bf;
 }
 
-.gs-text{
+.gs-text {
   opacity: 0.5;
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, sans-serif;
   font-size: 14px;
   font-weight: 300;
   color: #121212;
 }
 
-.black-s-text{
-  font-family: RobotoSlab;
+.black-s-text {
+  font-family: RobotoSlab, sans-serif;
   font-size: 16px;
   font-weight: 300;
   letter-spacing: -0.4px;
@@ -142,15 +138,15 @@ body {
 }
 
 .percent {
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 32px;
   color: var(--black-two);
 }
 
-.upgrade-btn{
+.upgrade-btn {
   color: white;
   letter-spacing: 0.5px;
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, sans-serif;
   font-size: 13px;
   font-weight: 300;
   padding: 7px 19px 8px 22px;
@@ -167,7 +163,7 @@ body {
 
 .Completed {
   opacity: 0.5;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 14px;
   color: #121212;
 }
