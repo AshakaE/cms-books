@@ -2,33 +2,29 @@
 
 # React 
 
-> .
+> A library built with react, and redux used for managing the state of the application.
 
-![](./docs/snapshot.jpeg)
+![](./src/utils/screenshot.png)
 
 ## Built With
 
 - React.js
 - TailwindCSS
 
-## Live Demo
+## [Bookstore CMS](https://cms-books.herokuapp.com/)
 
 [React]()
 
 ## Getting Started
 
-- `git clone git@github.com:AshakaE/`
-- `cd `
+- `git clone git@github.com:AshakaE/cms-books.git`
+- `cd cms-books`
 - `npm install`
 - `npm start`
 
 ### Prerequisites
 
 Node.js
-
-### Run tests
-
-- `npm test`
 
 ## Author
 
@@ -39,15 +35,15 @@ Node.js
 
 👤 Andres Ortegon
 
-- GitHub: @helman101
-- Twitter: @helman1011
-- LinkedIn: Andres Ortegon
+- GitHub: [@helman101](https://github.com/helman101)
+- Twitter: [@helman1011](https://twitter.com/Helman1011)
+- LinkedIn: [Andres Ortegon](https://www.linkedin.com/in/helman101/)
 
 ## 🤝 Contributing
 
 Contributions, issues and, feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/AshakaE//issues).
+Feel free to check the [issues page](https://github.com/AshakaE/cms-books/issues).
 
 ## Show your support
 
@@ -59,7 +55,7 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-Copyright 2021 Ashaka Egerega
+Copyright 2021 Ashaka Egerega and Andres Ortegon
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 

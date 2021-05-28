@@ -22,7 +22,6 @@ body {
 }
 
 .panel-head {
-  width: 1200px;
   height: 95px;
   background-color: white;
 }
@@ -48,7 +47,7 @@ body {
 .CATEGORIES {
   width: 105px;
   height: 16px;
-  margin: 18px 664px 11px 10px;
+  margin: 18px 630px 11px 10px;
   opacity: 0.5;
   font-size: 13px;
   letter-spacing: 1.9px;
@@ -166,4 +165,26 @@ body {
   font-family: Montserrat, sans-serif;
   font-size: 14px;
   color: #121212;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
