@@ -11,7 +11,7 @@
 - React.js
 - TailwindCSS
 
-## Live link (https://cms-books.herokuapp.com/)
+## [Live link](https://cms-books.herokuapp.com/)
 
 ## Getting Started
 
