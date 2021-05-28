@@ -56,7 +56,7 @@ const BooksForm = (props) => {
             onChange={handleChange}
             name="booksCategories"
             id="Books"
-            className="w-full appearance-none h-full px-5 focus:outline-none"
+            className="w-full appearance-none h-full px-5 focus:outline-none bg-white"
           >
             {categories.map((category) => (
               <option key={category} value={category}>
